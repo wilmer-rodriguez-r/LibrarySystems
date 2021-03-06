@@ -56,7 +56,7 @@ Tenemos 4 blancos se necesitará un vector con sus correspondientes probabilidad
 
 [1/2, i/2, -1/2, -i/2]
 
-Este sería el vector con las probabilidades solicitadas, como podemos a primera impresion no se parecen, sin embargo al hacer su norma al cuadrado comprobara que son la misma.
+Este sería el vector con las probabilidades solicitadas, como podemos ver a primera impresion no se parecen, sin embargo al hacer su norma al cuadrado comprobara que son la misma.
 Se hace una observación que al evaluar la norma al cuadrado a cada probabilidad, la suma de estas debe dar 1:
 
 Ejemplo:
