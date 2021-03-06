@@ -78,16 +78,13 @@ class TestStringMethods(unittest.TestCase):
         self.assertTrue((vector_estado == vector_estado_calculado).all())
 
     def test_multiple_rendija_cuant(self):
-        vector_estado = np.array([0, 0, 0,
-       -0.71+0.52670383j, -0.71-0.52670383j,  0.  +0.j        ,
-       -0.71-0.52670383j,  0.71-0.52670383j])
+        vector_estado = np.array([0, 0, 0, -0.71+0.52670383j, -0.71-0.52670383j, 0, -0.71-0.52670383j, 0.71-0.52670383j])
         rendijas, blancos, clicks, probs = 2, 3, 2, [-1+1j/6**(1/6), -1-1j/6**(1/6), 1-1j/6**(1/6)]
         for i in range(len(vector_estado)):
             vector_estado[i] = np.round(vector_estado[i], 1)
-        vector_estado_calculado = ls.multipleRendijaCuantico(2, 3, [-1+1j/6**(1/6), -1-1j/6**(1/6), 1-1j/6**(1/6)], 2)[0]
+        vector_estado_calculado = ls.multipleRendijaCuantico(rendijas,blancos, probs, clicks)[0]
         for i in range(len(vector_estado_calculado)):
             vector_estado_calculado[i] = np.round(vector_estado_calculado[i], 1)
-        print(vector_estado, vector_estado_calculado)
         self.assertTrue((vector_estado == vector_estado_calculado).all())
 
 
