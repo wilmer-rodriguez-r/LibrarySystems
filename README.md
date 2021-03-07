@@ -61,7 +61,7 @@ Se hace una observación que al evaluar la norma al cuadrado a cada probabilidad
 
 Ejemplo:
 
-(1/2)^2 + (i/2) ^2  + (-1/2)^2 + (-i/2)^2 = 1/4 + 1/4 + 1/4 + 1/4 = 1
+(1/2)^2 + (1/2) ^2  + (-1/2)^2 + (-1/2)^2 = 1/4 + 1/4 + 1/4 + 1/4 = 1
 
 Esto es para corroborar que los resultados de la función son correctos.
 
